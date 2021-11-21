@@ -22,9 +22,7 @@ class TabBarController: FloatingTabBarController {
     }
     
     func setUpTabBar() {
-        
-        tabBarController?.delegate = self
-        
+                
         let assetsScene = assetsVc
         let walletsScene = walletsVc
                                 
@@ -33,14 +31,4 @@ class TabBarController: FloatingTabBarController {
 
         self.viewControllers = [assetsVc, walletsVc]
     }
-}
-
-extension TabBarController: UITabBarControllerDelegate {
-    
-    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
-        
-        print(viewController)
-        return true
-    }
-    
 }

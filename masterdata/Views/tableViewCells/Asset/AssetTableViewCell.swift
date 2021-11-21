@@ -10,16 +10,11 @@ import Kingfisher
 
 class AssetTableViewCell: UITableViewCell, AssetsCellView {
     
+    //MARK: IBOutlets
     @IBOutlet weak private var assetIconImageView: UIImageView!
     @IBOutlet weak private var nameLabel: UILabel!
     @IBOutlet weak private var symbolLabel: UILabel!
     @IBOutlet weak private var averagePriceLabel: UILabel!
-    
-    //PRICE:::
-    
-//    - Each price must have the number of decimals described by precision for fiat price (see cryptocoin/commodity properties in the Masterdata). OK
-//    - Each price must also show the fiat symbol, as the prices are in euro fiat. OK
-//    - Each price must take the regional location of the device into account for formatting. For example 1298.99 euros in Austria would be formatted to 1.298,99 € but in the USA, it would be formatted to $1,298.99. OK
 
     override func awakeFromNib() {
         super.awakeFromNib()

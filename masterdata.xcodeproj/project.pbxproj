@@ -287,7 +287,7 @@
 		8A3BD256274898BA00F92C2C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8A3BD257274898BA00F92C2C /* DataClass.swift */,
+				8AC89E892749FBFA00377DDF /* Main */,
 				8A3BD258274898BA00F92C2C /* Commodities */,
 				8A3BD25A274898BA00F92C2C /* Commodity Wallets */,
 				8A3BD25C274898BA00F92C2C /* Wallets */,
@@ -419,8 +419,8 @@
 		8A3BD274274898BB00F92C2C /* AssetsScreen */ = {
 			isa = PBXGroup;
 			children = (
-				8A3BD275274898BB00F92C2C /* AssetViewController+ViewModel.swift */,
 				8A3BD276274898BB00F92C2C /* AssetsViewController.swift */,
+				8A3BD275274898BB00F92C2C /* AssetViewController+ViewModel.swift */,
 				8A3BD277274898BB00F92C2C /* AssetViewController+TableView.swift */,
 			);
 			path = AssetsScreen;
@@ -443,6 +443,14 @@
 				8A3BD29F2749609200F92C2C /* FilterHeaderView.swift */,
 			);
 			path = FilterHeaderView;
+			sourceTree = "<group>";
+		};
+		8AC89E892749FBFA00377DDF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8A3BD257274898BA00F92C2C /* DataClass.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		9455E6AAD12293DB00D066BA /* Frameworks */ = {

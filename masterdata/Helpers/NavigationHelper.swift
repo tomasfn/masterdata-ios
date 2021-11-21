@@ -33,11 +33,6 @@ class NavigationHelper {
         let vc = mainStoryboard.instantiateViewController(withIdentifier: TabBarController.nameOfClass) as! TabBarController
         return vc
     }
-    
-    class func walletBalancesViewController() -> WalletBalancesViewController {
-        let walletBalancesVC = mainStoryboard.instantiateViewController(withIdentifier: WalletBalancesViewController.nameOfClass) as! WalletBalancesViewController
-        return walletBalancesVC
-    }
 }
 
 //MARK: - Set Root ViewController

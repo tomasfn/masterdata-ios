@@ -9,12 +9,7 @@ import Foundation
 import UIKit
 
 extension WalletViewController: WalletsView {
-    
-    func showWalletBalances(viewModel: WalletBalancesViewModel) {
-        let vc = WalletBalancesViewController.`init`(with: viewModel)
-        navigationController?.pushViewController(vc, animated: true)
-    }
-    
+        
     func reloadTableView() {
         DispatchQueue.main.async {
             self.tableView.reloadData()

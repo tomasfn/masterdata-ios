@@ -10,6 +10,7 @@ import UIKit
 
 class FilterHeaderView: UIView {
     
+    //MARK: IBOutlets
     @IBOutlet weak var filterCommodities: UIButton!
     @IBOutlet weak var filterCrypto: UIButton!
     @IBOutlet weak var filterFiat: UIButton!

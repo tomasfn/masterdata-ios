@@ -47,7 +47,19 @@ class WalletViewModel {
         
         tableData = [self.wallets, self.commodityWallets, self.fiatWallets]
     }
-        
+            
+    func getWalletsCount() -> Int{
+        return wallets.count
+    }
+    
+    func getFiatWalletsCount() -> Int {
+        return fiatWallets.count
+    }
+    
+    func getCommodityWalletsCount() -> Int {
+        return commodityWallets.count
+    }
+    
     func getWalletsCount(section: Int) -> Int {
         switch section {
         case 0:
@@ -59,18 +71,6 @@ class WalletViewModel {
         default:
             return 0
         }
-    }
-    
-    func getWalletsCount() -> Int{
-        return wallets.count
-    }
-    
-    func getFiatWalletsCount() -> Int {
-        return fiatWallets.count
-    }
-    
-    func getCommodityWalletsCount() -> Int {
-        return commodityWallets.count
     }
     
     func applyWalletsOrder(wallets: [Wallet]) -> [Wallet] {

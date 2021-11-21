@@ -9,13 +9,15 @@ import Foundation
 
 // MARK: - CommodityWalletAttributes
 struct CommodityWalletAttributes: Codable {
-    let cryptocoinID, cryptocoinSymbol, balance: String?
+    let cryptocoinID: String?
+    let cryptocoinSymbol: String?
+    let balance: String?
     let isDefault: Bool?
     let name: String?
     let pendingTransactionsCount: Int?
     let deleted: Bool?
-    
-    let fiatID, fiatSymbol: String?
+    let fiatID: String?
+    let fiatSymbol: String?
 
     enum CodingKeys: String, CodingKey {
         case cryptocoinID = "cryptocoin_id"
@@ -25,7 +27,6 @@ struct CommodityWalletAttributes: Codable {
         case name
         case pendingTransactionsCount = "pending_transactions_count"
         case deleted
-        
         case fiatID = "fiat_id"
         case fiatSymbol = "fiat_symbol"
     }
