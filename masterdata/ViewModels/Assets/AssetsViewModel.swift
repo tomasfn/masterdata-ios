@@ -25,10 +25,8 @@ class AssetsViewModel {
     var reloadTableViewClosure: (()->())?
     
     private weak var view: AssetsView?
-    
     private var filteredCommodities: [Commodity] = []
-    
-    var commodities: [Commodity] = [Commodity]() {
+    private var commodities: [Commodity] = [Commodity]() {
          didSet {
              self.reloadTableViewClosure?()
          }

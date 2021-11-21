@@ -17,7 +17,6 @@ class GeneralWalletTableViewCell: UITableViewCell, WalletsCellView {
     @IBOutlet weak private var balanceLabel: UILabel!
     @IBOutlet weak private var isDefaultLabel: UILabel!
 
-
     override func awakeFromNib() {
         super.awakeFromNib()
     }

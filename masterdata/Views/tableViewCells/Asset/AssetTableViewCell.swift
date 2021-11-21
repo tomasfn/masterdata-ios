@@ -35,8 +35,8 @@ class AssetTableViewCell: UITableViewCell, AssetsCellView {
         }
                 
         if let price = commodity.attributes?.avgPrice, let precision = commodity.attributes?.precisionForFiatPrice {
-            if let intDouble = Double(price) {
-                let conformedPrice = String(format: "%.\(precision)f", locale: Locale.current, intDouble)
+            if let priceValue = Double(price) {
+                let conformedPrice = String(format: "%.\(precision)f", locale: Locale.current, priceValue)
                 averagePriceLabel.text = "\(conformedPrice) €"
             }
         } else {
