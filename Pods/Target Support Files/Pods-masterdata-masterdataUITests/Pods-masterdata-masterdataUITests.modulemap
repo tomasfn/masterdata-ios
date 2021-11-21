@@ -1,0 +1,6 @@
+framework module Pods_masterdata_masterdataUITests {
+  umbrella header "Pods-masterdata-masterdataUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,34 @@
+PODS:
+  - CGMath (1.0.2)
+  - CocoaLumberjack (3.7.2):
+    - CocoaLumberjack/Core (= 3.7.2)
+  - CocoaLumberjack/Core (3.7.2)
+  - FloatingTabBarController (1.0.0):
+    - CGMath
+  - Kingfisher (6.3.1)
+  - SVGKit (3.0.0):
+    - CocoaLumberjack (~> 3.0)
+
+DEPENDENCIES:
+  - FloatingTabBarController
+  - Kingfisher
+  - SVGKit
+
+SPEC REPOS:
+  trunk:
+    - CGMath
+    - CocoaLumberjack
+    - FloatingTabBarController
+    - Kingfisher
+    - SVGKit
+
+SPEC CHECKSUMS:
+  CGMath: 41d118f6890c0e1a7aa10bd262f6f199590f72aa
+  CocoaLumberjack: b7e05132ff94f6ae4dfa9d5bce9141893a21d9da
+  FloatingTabBarController: 2e5aeb6a5e28cd907c10f172437e48788a214f31
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  SVGKit: 1ad7513f8c74d9652f94ed64ddecda1a23864dea
+
+PODFILE CHECKSUM: c5f7b9e1a732e5d8d571bd7ecbc8252770ecef9c
+
+COCOAPODS: 1.10.1

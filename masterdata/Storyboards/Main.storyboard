@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KL8-Au-wur">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Wallet View Controller-->
+        <scene sceneID="Dsg-am-gHW">
+            <objects>
+                <viewController storyboardIdentifier="WalletViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="R7a-sU-N3b" customClass="WalletViewController" customModule="masterdata" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B2o-xV-s2b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="jD3-NR-05C">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aY3-iG-w5d"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jD3-NR-05C" firstAttribute="trailing" secondItem="aY3-iG-w5d" secondAttribute="trailing" id="Is1-J0-JOv"/>
+                            <constraint firstItem="jD3-NR-05C" firstAttribute="leading" secondItem="aY3-iG-w5d" secondAttribute="leading" id="Iw9-CN-fVr"/>
+                            <constraint firstAttribute="bottom" secondItem="jD3-NR-05C" secondAttribute="bottom" id="LU9-vX-rW0"/>
+                            <constraint firstItem="jD3-NR-05C" firstAttribute="top" secondItem="aY3-iG-w5d" secondAttribute="top" id="NpR-aY-VOx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9pg-XZ-wh8"/>
+                    <connections>
+                        <outlet property="tableView" destination="jD3-NR-05C" id="Acf-hE-vzS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aos-XU-Yfj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="799" y="74"/>
+        </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="keX-ZG-sax">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KL8-Au-wur" customClass="SplashViewController" customModule="masterdata" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xCU-rm-kFL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="OEB-4n-9fN"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I94-j5-GhW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96" y="767"/>
+        </scene>
+        <!--Assets View Controller-->
+        <scene sceneID="vXe-yo-VBc">
+            <objects>
+                <viewController storyboardIdentifier="AssetsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="b8G-8u-tNO" customClass="AssetsViewController" customModule="masterdata" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gwK-wQ-5fg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZXL-pO-62r">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" name="backgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ML5-xA-0xz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZXL-pO-62r" firstAttribute="top" secondItem="ML5-xA-0xz" secondAttribute="top" id="9pg-ch-bIi"/>
+                            <constraint firstItem="ZXL-pO-62r" firstAttribute="trailing" secondItem="ML5-xA-0xz" secondAttribute="trailing" id="Pii-58-4KZ"/>
+                            <constraint firstAttribute="bottom" secondItem="ZXL-pO-62r" secondAttribute="bottom" id="ZTC-t8-npp"/>
+                            <constraint firstItem="ZXL-pO-62r" firstAttribute="leading" secondItem="ML5-xA-0xz" secondAttribute="leading" id="o8F-18-Qrg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JA6-Oc-reT"/>
+                    <connections>
+                        <outlet property="tableView" destination="ZXL-pO-62r" id="RnP-Za-23h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FI7-37-H0o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96" y="74"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="backgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

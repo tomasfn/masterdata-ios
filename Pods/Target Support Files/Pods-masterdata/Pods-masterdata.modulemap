@@ -1,0 +1,6 @@
+framework module Pods_masterdata {
+  umbrella header "Pods-masterdata-umbrella.h"
+
+  export *
+  module * { export * }
+}
