@@ -15,7 +15,7 @@ class GeneralWalletTableViewCell: UITableViewCell, WalletsCellView {
     @IBOutlet weak private var assetSymbolLabel: UILabel!
     @IBOutlet weak private var assetIconImageView: UIImageView!
     @IBOutlet weak private var balanceLabel: UILabel!
-    @IBOutlet weak private var isDefaultLabel: UILabel!
+    @IBOutlet weak private var isDefaultImageIndicatorView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -41,8 +41,7 @@ class GeneralWalletTableViewCell: UITableViewCell, WalletsCellView {
         }
         
         if let isDefaultWallet = wallet.attributes?.isDefault {
-            isDefaultLabel.backgroundColor = isDefaultWallet ? UIColor.systemGreen : UIColor.clear
-            isDefaultLabel.roundView()
+            isDefaultImageIndicatorView.image = isDefaultWallet ? UIImage.init(named: "tick") : UIImage()
         }
                         
         if commodity?.type == .fiat {
